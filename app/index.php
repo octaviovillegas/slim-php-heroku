@@ -12,6 +12,7 @@ $app->addRoutingMiddleware();
 $app->addErrorMiddleware(true, true, true);
 //$app->setBasePath("/slim4/public");
 //$app->setBasePath("/public/index.php");
+$app->setBasePath("https://dashboard.heroku.com/index.php");
 $app->get('/hola/', function (Request $request, Response $response, $args) {
     $response->getBody()->write("Saludar!");
     return $response;
