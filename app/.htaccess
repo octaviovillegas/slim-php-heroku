@@ -1,3 +1,0 @@
-#RewriteEngine on
-#RewriteRule ^$ slim4/public/ [L]
-#RewriteRule (.*) slim4/public/$1 [L]
