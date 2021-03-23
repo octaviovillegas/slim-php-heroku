@@ -11,8 +11,8 @@ $app->addRoutingMiddleware();
 
 $app->addErrorMiddleware(true, true, true);
 //$app->setBasePath("/slim4/public");
-//$app->setBasePath("/public/index.php");
-
+//$app->setBasePath("/slim4/public/index.php");
+$app->setBasePath("/app/index.php");
 $app->get('/hola/', function (Request $request, Response $response, $args) {
     $response->getBody()->write("Saludar!");
     return $response;
